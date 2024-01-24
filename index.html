@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg p-5">
+            <div class="container">
+            <a class="navbar-brand text-white d-flex align-items-center justify-content-center" href="#">
+                <img src="images/logo@2x.png" alt="">
+                <div class="logo-text ps-2">
+                    <h1>Weather </h1>
+                    <span>tagline goes here</span>
+                </div>
+            </a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="text-white"><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Live cameras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Photos</a>
+                </li>
+                <li class="nav-item last-nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                </ul>
+                
+            </div>
+            </div>
+        </nav>
+    </section>
+
+    <section id="home">
+        <div class="container">
+            <div class="search-content">
+                <input type="text" placeholder="Find your location.." class="input-search" id="cityInput">
+                
+                <button class="button-search" id="findButton">Find</button>
+                
+            </div>  
+            <!-- <p class="error-regex pt-2 d-none">Please enter a valid city name</p>
+            <p class="pt-2 error d-none">Please Enter a city</p> -->
+
+
+            <div class="d-flex align-items-stretch justify-content-start table-forecast">
+                <div class="first">
+                    <div class="forecast-header d-flex align-items-center justify-content-between p-3">
+                        <p class="m-0" id="currentDay"></p>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <p class="m-0" id="todayNumber"></p>
+                            <p id="monthName" class="m-0 ps-1"></p>
+                        </div>
+                        
+                    </div>
+                    <div class="forecast-content p-3">
+                    <p class="location-city"></p>
+                    <div class="forecast-degree d-flex align-items-center justify-content-between">
+                        <div class="degree">
+                            
+                        </div>
+                        <div>
+                            <img src="" alt="" id="weatherIcon">
+                        </div>
+                    </div>
+                    <p class="todayStatus"></p>
+                    <div class="d-flex align-items-center justify-content-start forecast-footer">
+                        <div class="">
+                            <img src="images/icon-umberella@2x.png" alt=""><span class="humdity"></span> 
+                        </div>
+                        <div class="ps-3">
+                            <img src="images/icon-wind@2x.png" alt=""> <span class="wind"></span> 
+                        </div>
+                        <div class="ps-3">
+                            <img src="images/icon-compass@2x.png" alt=""><span class="wind-direction"></span> 
+                        </div>
+                        
+                    </div>
+                    </div>
+    
+                </div>
+                <div class="second">
+                    <div class="forecast-header p-3">
+                        <p class="m-0 nextDay"></p>
+                    </div>
+                    <div class="forecast-content p-3 d-flex flex-column justify-content-start align-items-center">
+                        <div class="py-3">
+                            <img src="" alt="" class="imgForecast">
+                        </div>
+                        <p class="max-degree m-0 pb-2"></p>
+                        <P class="min-degree pb-2"></P>
+                        <p class="status pb-2"></p>
+                    </div>
+                </div>
+                <div class="third">
+                    <div class="forecast-header p-3">
+                        <p class="m-0 nextDay"></p>
+                    </div>
+                    <div class="forecast-content p-3 d-flex flex-column justify-content-start align-items-center">
+                        <div class="py-3">
+                            <img src="" alt="" class="imgForecast">
+                        </div>
+                        <p class="max-degree m-0 pb-2"></p>
+                        <P class="min-degree pb-2"></P>
+                        <p class="status pb-2"></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="background">
+
+        </div>
+    </section>
+
+
+
+<section id="footer" class="">
+    <div class="container">
+        <div class="footer-content row">
+            <div class="col-lg-8 col-md-12">
+                <div class="search-content">
+                    <input type="text" placeholder="Enter Your Email to Subscribe.." class="input-search" >
+                    
+                    <button class="button-search">Subscribe</button>
+                    
+                </div>  
+            </div>
+
+            <ul class="social-links col-lg-4 col-md-12 d-flex align-items-center justify-content-center">
+                <li class="d-flex align-items-center justify-content-center"><i class="fa-brands fa-facebook-f"></i></li>
+                <li class="d-flex align-items-center justify-content-center"><i class="fa-brands fa-twitter"></i></li>
+                <li class="d-flex align-items-center justify-content-center"><i class="fa-brands fa-google-plus-g"></i></li>
+                <li class="d-flex align-items-center justify-content-center"><i class="fa-brands fa-pinterest"></i></li>
+            </ul>
+        </div>
+        <p class="pt-4">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+</section>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

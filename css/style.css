@@ -1,0 +1,390 @@
+
+
+*{
+    box-sizing:border-box ;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+nav{
+    background-color: #1E202B;
+    
+}
+
+nav .navbar-brand img{
+    width: 64px;
+}
+
+nav .navbar-brand .logo-text h1{
+    font-size: 1rem;
+    font-weight: 700 ;
+}
+
+
+nav .navbar-brand .logo-text span{
+    font-size: 12px;
+    display: block;
+    color: #bfc1c8;
+}
+
+nav .nav-link{
+    color: #fff;
+    padding: 3px 25px !important;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    -webkit-transition: 0.3s ease;
+    transition: color 0.3s ease ,border 0.3s ease;
+    font-weight: 400;
+    margin-right: 9px;
+    font-size: .875rem;
+}
+
+nav .nav-link.active{
+    color: #009ad8 !important;
+    border: 2px solid #009ad8;
+}
+
+
+nav .nav-link:hover{
+    color: #009ad8!important;
+    border: 2px solid #009ad8 ;
+}
+
+#home{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/banner.png');
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 70px 0px;
+    position: relative;
+}
+
+.input-search{
+    width: 100%;
+    color: white !important;
+    padding: 20px 50px 20px 20px;
+    background: rgb(30, 32, 43);
+    border-radius: 30px;
+    border: none;
+}
+
+.input-search::placeholder{
+    color: #fff;
+}
+
+.input-search:focus{
+    outline: none;
+}
+.search-content{
+    position: relative;
+}
+.button-search{
+position: absolute;
+top: 5px;
+right: 5px;
+bottom: 5px;
+padding: 0px 45px;
+color: #fff;
+background-color: #009ad8;
+border: none;
+border-radius: 30px;
+font-size: 14px;
+}
+.first{
+    width: 33.33%;
+    height: 346.38px;
+    
+}
+.second{
+    width: 33.33%;
+    height: 346.38px;
+
+
+}
+.third{
+    width: 33.33%;
+    height: 346.38px;
+}
+
+.table-forecast {
+    border-radius: 10px; /* Apply border-radius to the container */
+    overflow: hidden; /* Ensure rounded corners are visible */
+    margin-top: 70px;
+    position: relative;
+    z-index: 999;
+   
+  
+}
+
+
+
+.first .forecast-content{
+    background-color: #333544;
+    height: 100%;
+}
+
+
+.first .forecast-header{
+    background-color: #2E303D;
+    color: #bfc1c8;
+}
+
+.first .forecast-header p{
+    font-size: 14px;
+}
+
+.first .forecast-content .location-city{
+    color: #bfc1c8;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.first .forecast-content .forecast-degree .degree{
+    font-size: 90px;
+    color: #fff;
+    line-height: 135px;
+    font-weight: 700;
+}
+
+.first .forecast-content .forecast-degree img{
+    width: 90px;
+}
+
+.forecast-content .status{
+    color: #009ad8;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.forecast-content .todayStatus{
+    color: #009ad8;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.first .forecast-footer div img{
+    width: 21px;
+    /* margin-right: 5px; */
+}
+
+.first .forecast-footer span{
+    display: inline-block;
+    color: #bfc1c8;
+    margin-left: 5px;
+}
+
+.second .forecast-header{
+    font-size: 14px;
+    color: #bfc1c8;
+    text-align: center;
+    background-color: #232531;
+}
+.second .forecast-content{
+    background-color: #272936;
+    height: 100%;
+}
+
+
+.second .forecast-content img, .third .forecast-content img{
+    width: 70px;
+}
+
+.second .forecast-content .max-degree, .third .forecast-content .max-degree{
+    font-size: 24px;
+    color: #fff;
+    line-height: 36px;
+}
+
+.second .forecast-content .min-degree, .third .forecast-content .min-degree{
+    color: #bfc1c8;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.third .forecast-header{
+    font-size: 14px;
+    color: #bfc1c8;
+    text-align: center;
+    background-color: #2E303D;
+}
+
+.third .forecast-content{
+    background-color: #333544;
+    height: 100%;
+}
+
+.error, .error-regex{
+    color: red;
+}
+
+.background{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1E202B;
+  
+} 
+
+
+
+#footer{
+    background-color: #272936;
+    padding-block: 60px;
+   
+    
+}
+#footer .social-links li{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:rgb(30, 32, 43) ;
+    margin-right: 7px;
+}
+#footer .social-links li i{
+    color: #009ad8;
+}
+
+#footer p{
+    color: #BFC1C8;
+    font-size: .875rem;
+    font-weight: 300;
+}
+
+
+
+/*================================ contact style ==================================== */
+
+
+.contact{
+    padding-top: 50px;
+    background-color: #1E202B;
+}
+
+
+.input-with-anchor {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.input-anchor {
+    position: absolute;
+    top: 50%;
+    left: 15px; /* Adjust as needed */
+    transform: translateY(-50%);
+    z-index: 1;
+    color: #bfc1c8;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.input-anchor i{
+    padding-left: 5px;
+}
+
+.input-anchor span{
+    color: #fff;
+    padding-left: 8px;
+}
+
+.input-field{
+    padding: 20px 50px 20px 20px;
+    background: #272936;
+    border-radius: 30px;
+    border: none;
+}
+
+.contact-content i{
+    color: #009ad8;
+}
+
+.left-side{
+    background-color: #272936;
+    margin-top: 60px;
+    padding-top: 80px !important;
+    padding-inline:20px ;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    color: #BFC1C8;
+    font-size: 14px;
+   
+}
+
+.left-side .first-item{
+    padding-top: 80px;
+}
+
+.right-side{
+    padding-top: 60px;
+}
+
+.right-side h2{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.right-side p{
+    color: #bfc1c8;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.right-side input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: white;
+    border: 2px solid #393c48;
+    background: transparent;
+    border-radius: 30px;
+}
+
+.input-name, .input-company{
+
+    margin-right: 10px;
+}
+
+.right-side textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: white;
+    border: 2px solid #393c48;
+    background: transparent;
+    border-radius: 30px;
+    resize: vertical;
+}
+
+.right-side input::placeholder{
+    font-size: 14px;
+}
+.right-side textarea::placeholder{
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #009ad8; 
+    }
+
+.right-side button{
+        border: none;
+    background: #009ad8;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    
+    }
